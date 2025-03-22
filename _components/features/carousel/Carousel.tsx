@@ -1,9 +1,9 @@
 "use client"
 
-import { Card } from "@/components/utils/Card";
-import { CornerBlur } from "@/components/utils/CornerBlur";
-import { SectionHeading } from "@/components/utils/SectionHeading";
-import { SectionSubheading } from "@/components/utils/SectionSubheading";
+import { Card } from "@/_components/utils/Card";
+import { CornerBlur } from "@/_components/utils/CornerBlur";
+import { SectionHeading } from "@/_components/utils/SectionHeading";
+import { SectionSubheading } from "@/_components/utils/SectionSubheading";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { IconType } from "react-icons";

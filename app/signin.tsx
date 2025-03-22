@@ -1,5 +1,5 @@
-import { Footer } from "@/components/footer/Footer";
-import { SignIn } from "@/components/signin/SignIn";
+import { Footer } from "@/_components/footer/Footer";
+import { SignIn } from "@/_components/signin/SignIn";
 import { Barlow } from "next/font/google";
 
 const barlowFont = Barlow({

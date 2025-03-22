@@ -1,12 +1,12 @@
-import { MaxWidthWrapper } from "@/components/utils/MaxWidthWrapper";
+import { MaxWidthWrapper } from "@/_components/utils/MaxWidthWrapper";
 import React from "react";
 import { CodeCard } from "./CodeCard";
 import { Minigrid } from "../../utils/Minigrid";
 import { FiZap } from "react-icons/fi";
 import { Stepper } from "./Stepper";
-import { SectionHeadingSpacing } from "@/components/utils/SectionHeadingSpacing";
-import { SectionHeading } from "@/components/utils/SectionHeading";
-import { SectionSubheading } from "@/components/utils/SectionSubheading";
+import { SectionHeadingSpacing } from "@/_components/utils/SectionHeadingSpacing";
+import { SectionHeading } from "@/_components/utils/SectionHeading";
+import { SectionSubheading } from "@/_components/utils/SectionSubheading";
 
 export const CodeDemo = () => {
   return (

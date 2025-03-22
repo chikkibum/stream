@@ -2,9 +2,9 @@
 
 import React, { MouseEventHandler, useState } from "react";
 import { Markup } from "./Markup";
-import { Card } from "@/components/utils/Card";
-import { PulseLine } from "@/components/utils/PulseLine";
-import { BubbleButton } from "@/components/buttons/BubbleButton";
+import { Card } from "@/_components/utils/Card";
+import { PulseLine } from "@/_components/utils/PulseLine";
+import { BubbleButton } from "@/_components/buttons/BubbleButton";
 import { SiGithub } from "react-icons/si";
 import { FiStar } from "react-icons/fi";
 

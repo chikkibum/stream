@@ -5,7 +5,7 @@ import { Card } from "../../utils/Card";
 import { CalloutChip } from "../../utils/CalloutChip";
 import { motion } from "framer-motion";
 import { FiLink } from "react-icons/fi";
-import { BubbleButton } from "@/components/buttons/BubbleButton";
+import { BubbleButton } from "@/_components/buttons/BubbleButton";
 
 export const MiniCard1 = () => {
   return (

@@ -1,4 +1,4 @@
-import { Beams } from "@/components/utils/Beams";
+import { Beams } from "@/_components/utils/Beams";
 import React from "react";
 
 export const Minigrid = () => {

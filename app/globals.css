@@ -121,6 +121,19 @@
   }
 }
 
+
+:root,html,body{
+  /* bg-zinc-950 text-zinc-200 selection:bg-zinc-600 */
+  background-color: #09090b;
+  color:#e4e4e7;
+  height: 100%;
+  
+}
+
+::selection {
+  background-color: #52525b; /* Equivalent to selection:bg-zinc-600 */
+}
+
 /* Firefox */
 * {
   scrollbar-width: thin;

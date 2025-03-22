@@ -13,8 +13,8 @@ import {
   FiUser,
 } from "react-icons/fi";
 import { useEffect, useState } from "react";
-import { CornerBlur } from "@/components/utils/CornerBlur";
-import { PulseLine } from "@/components/utils/PulseLine";
+import { CornerBlur } from "@/_components/utils/CornerBlur";
+import { PulseLine } from "@/_components/utils/PulseLine";
 
 export const Tower = () => {
   return (

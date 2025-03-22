@@ -1,11 +1,11 @@
 "use client"
 import React from "react";
-import { CornerGrid } from "@/components/utils/CornerGrid";
-import { NavLogo } from "@/components/navbar/NavLogo";
+import { CornerGrid } from "@/_components/utils/CornerGrid";
+import { NavLogo } from "@/_components/navbar/NavLogo";
 import Link from "next/link";
-import { BubbleButton } from "@/components/buttons/BubbleButton";
+import { BubbleButton } from "@/_components/buttons/BubbleButton";
 import { SiGithub, SiX } from "react-icons/si";
-import { SplashButton } from "@/components/buttons/SplashButton";
+import { SplashButton } from "@/_components/buttons/SplashButton";
 import { FiArrowLeft } from "react-icons/fi";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";

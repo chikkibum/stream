@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import { animate, useInView } from "framer-motion";
-import { CornerBlur } from "@/components/utils/CornerBlur";
+import { CornerBlur } from "@/_components/utils/CornerBlur";
 
 export const Stats = () => {
   return (
