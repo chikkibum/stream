@@ -1,11 +1,11 @@
-"use client"
+'use client';
 
-import React from "react";
-import { Card } from "../../utils/Card";
-import { CalloutChip } from "../../utils/CalloutChip";
-import { motion } from "framer-motion";
-import { FiLink } from "react-icons/fi";
-import { BubbleButton } from "@/_components/buttons/BubbleButton";
+import React from 'react';
+import { Card } from '../../utils/Card';
+import { CalloutChip } from '../../utils/CalloutChip';
+import { motion } from 'framer-motion';
+import { FiLink } from 'react-icons/fi';
+import { BubbleButton } from '@/components/buttons/BubbleButton';
 
 export const MiniCard1 = () => {
   return (
@@ -42,8 +42,8 @@ const Band = ({ delay }: { delay: number }) => {
   return (
     <motion.span
       style={{
-        translateX: "-50%",
-        translateY: "-50%",
+        translateX: '-50%',
+        translateY: '-50%',
       }}
       initial={{
         opacity: 0,
@@ -55,10 +55,10 @@ const Band = ({ delay }: { delay: number }) => {
       }}
       transition={{
         repeat: Infinity,
-        repeatType: "loop",
+        repeatType: 'loop',
         times: [0, 0.5, 0.75, 1],
         duration: LOOP_DURATION,
-        ease: "linear",
+        ease: 'linear',
         delay,
       }}
       className="absolute left-[50%] top-[50%] z-0 size-80 rounded-full border border-blue-600 bg-gradient-to-br from-blue-600/50 to-blue-950/20"

@@ -1,14 +1,14 @@
-"use client"
-import React from "react";
-import { CornerGrid } from "@/_components/utils/CornerGrid";
-import { NavLogo } from "@/_components/navbar/NavLogo";
-import Link from "next/link";
-import { BubbleButton } from "@/_components/buttons/BubbleButton";
-import { SiGithub, SiX } from "react-icons/si";
-import { SplashButton } from "@/_components/buttons/SplashButton";
-import { FiArrowLeft } from "react-icons/fi";
-import { useRouter } from "next/navigation";
-import { motion } from "framer-motion";
+'use client';
+import React from 'react';
+import { CornerGrid } from '@/components/utils/CornerGrid';
+import { NavLogo } from '@/components/navbar/NavLogo';
+import Link from 'next/link';
+import { BubbleButton } from '@/components/buttons/BubbleButton';
+import { SiGithub, SiX } from 'react-icons/si';
+import { SplashButton } from '@/components/buttons/SplashButton';
+import { FiArrowLeft } from 'react-icons/fi';
+import { useRouter } from 'next/navigation';
+import { motion } from 'framer-motion';
 
 const SignIn = () => {
   const router = useRouter();
@@ -17,7 +17,7 @@ const SignIn = () => {
     <div className="fixed inset-0 z-50 overflow-y-scroll bg-zinc-950 py-20">
       <BubbleButton
         onClick={() => {
-          router.push("/");
+          router.push('/');
         }}
         className="absolute left-4 top-6 text-sm"
       >
@@ -36,7 +36,7 @@ const SignIn = () => {
         }}
         transition={{
           duration: 1.25,
-          ease: "easeInOut",
+          ease: 'easeInOut',
         }}
         className="relative z-10 mx-auto w-full max-w-xl p-4"
       >
@@ -59,7 +59,7 @@ const Heading = () => (
     <div className="mb-9 mt-6 space-y-1.5">
       <h1 className="text-2xl font-semibold">Sign in to your account</h1>
       <p className="text-zinc-400">
-        Don&apos;t have an account?{" "}
+        Don&apos;t have an account?{' '}
         <Link href="#" className="text-blue-400">
           Create one.
         </Link>
@@ -96,7 +96,7 @@ const Or = () => {
 
 const Email = () => {
   return (
-    <form onSubmit={(e) => e.preventDefault()}>
+    <form onSubmit={e => e.preventDefault()}>
       <div className="mb-3">
         <label htmlFor="email-input" className="mb-1.5 block text-zinc-400">
           Email
@@ -133,11 +133,11 @@ const Email = () => {
 
 const Terms = () => (
   <p className="mt-9 text-xs text-zinc-400">
-    By signing in, you agree to our{" "}
+    By signing in, you agree to our{' '}
     <Link href="#" className="text-blue-400">
       Terms & Conditions
-    </Link>{" "}
-    and{" "}
+    </Link>{' '}
+    and{' '}
     <Link href="#" className="text-blue-400">
       Privacy Policy.
     </Link>

@@ -3,8 +3,8 @@ import { dark } from '@clerk/themes';
 import { ClerkProvider } from '@clerk/nextjs';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import { NavBar } from '@/_components/navbar/NavBar';
-import { ThemeProvider } from '@/_components/theme-provider';
+import { NavBar } from '@/components/navbar/NavBar';
+import { ThemeProvider } from '@/components/theme-provider';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',

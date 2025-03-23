@@ -1,7 +1,7 @@
-import React from "react";
-import { Content } from "./Content";
-import { CornerBlur } from "@/_components/utils/CornerBlur";
-import { CornerGrid } from "@/_components/utils/CornerGrid";
+import React from 'react';
+import { Content } from './Content';
+import { CornerBlur } from '@/components/utils/CornerBlur';
+import { CornerGrid } from '@/components/utils/CornerGrid';
 
 export const FeatureGrid = () => {
   return (

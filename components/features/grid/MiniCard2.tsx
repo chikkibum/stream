@@ -1,8 +1,8 @@
-import React from "react";
-import { Card } from "../../utils/Card";
-import { CalloutChip } from "../../utils/CalloutChip";
-import { SiTwitch } from "react-icons/si";
-import { CornerBlur } from "@/_components/utils/CornerBlur";
+import React from 'react';
+import { Card } from '../../utils/Card';
+import { CalloutChip } from '../../utils/CalloutChip';
+import { SiTwitch } from 'react-icons/si';
+import { CornerBlur } from '@/components/utils/CornerBlur';
 
 export const MiniCard2 = () => {
   return (

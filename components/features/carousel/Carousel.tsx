@@ -1,12 +1,12 @@
-"use client"
+'use client';
 
-import { Card } from "@/_components/utils/Card";
-import { CornerBlur } from "@/_components/utils/CornerBlur";
-import { SectionHeading } from "@/_components/utils/SectionHeading";
-import { SectionSubheading } from "@/_components/utils/SectionSubheading";
-import { motion } from "framer-motion";
-import { useState } from "react";
-import { IconType } from "react-icons";
+import { Card } from '@/components/utils/Card';
+import { CornerBlur } from '@/components/utils/CornerBlur';
+import { SectionHeading } from '@/components/utils/SectionHeading';
+import { SectionSubheading } from '@/components/utils/SectionSubheading';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { IconType } from 'react-icons';
 import {
   FiArrowLeft,
   FiArrowRight,
@@ -15,8 +15,8 @@ import {
   FiPhone,
   FiShield,
   FiUsers,
-} from "react-icons/fi";
-import useMeasure from "react-use-measure";
+} from 'react-icons/fi';
+import useMeasure from 'react-use-measure';
 
 const CARD_WIDTH = 350;
 const MARGIN = 20;
@@ -43,14 +43,14 @@ const Carousel = () => {
     if (!CAN_SHIFT_LEFT) {
       return;
     }
-    setOffset((pv) => (pv += CARD_SIZE));
+    setOffset(pv => (pv += CARD_SIZE));
   };
 
   const shiftRight = () => {
     if (!CAN_SHIFT_RIGHT) {
       return;
     }
-    setOffset((pv) => (pv -= CARD_SIZE));
+    setOffset(pv => (pv -= CARD_SIZE));
   };
 
   return (
@@ -71,7 +71,7 @@ const Carousel = () => {
             <div className="flex items-center gap-2">
               <button
                 className={`rounded-lg border-[1px] border-zinc-700 bg-zinc-900 p-1.5 text-2xl transition-opacity ${
-                  CAN_SHIFT_LEFT ? "" : "opacity-30"
+                  CAN_SHIFT_LEFT ? '' : 'opacity-30'
                 }`}
                 disabled={!CAN_SHIFT_LEFT}
                 onClick={shiftLeft}
@@ -80,7 +80,7 @@ const Carousel = () => {
               </button>
               <button
                 className={`rounded-lg border-[1px] border-zinc-700 bg-zinc-900 p-1.5 text-2xl transition-opacity ${
-                  CAN_SHIFT_RIGHT ? "" : "opacity-30"
+                  CAN_SHIFT_RIGHT ? '' : 'opacity-30'
                 }`}
                 disabled={!CAN_SHIFT_RIGHT}
                 onClick={shiftRight}
@@ -94,14 +94,14 @@ const Carousel = () => {
               x: offset,
             }}
             transition={{
-              ease: "easeInOut",
+              ease: 'easeInOut',
             }}
             className="grid"
             style={{
               gridTemplateColumns: `repeat(${features.length}, 1fr)`,
             }}
           >
-            {features.map((post) => {
+            {features.map(post => {
               return <Feature key={post.id} {...post} />;
             })}
           </motion.div>
@@ -142,36 +142,36 @@ const features: FeatureType[] = [
   {
     id: 1,
     Icon: FiArrowUp,
-    title: "Fast & accurate reporting",
+    title: 'Fast & accurate reporting',
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.',
   },
   {
     id: 2,
     Icon: FiShield,
-    title: "A+ Security",
+    title: 'A+ Security',
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.',
   },
   {
     id: 3,
     Icon: FiUsers,
-    title: "World class teams",
+    title: 'World class teams',
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.',
   },
   {
     id: 4,
     Icon: FiPhone,
-    title: "Best in class support",
+    title: 'Best in class support',
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.',
   },
   {
     id: 5,
     Icon: FiBox,
-    title: "All-in-one product",
+    title: 'All-in-one product',
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.",
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dolor.',
   },
 ];

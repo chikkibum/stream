@@ -1,26 +1,26 @@
-import { CTA } from '@/_components/cta/CTA';
-import { Customers } from '@/_components/customers/Customers';
-import Carousel from '@/_components/features/carousel/Carousel';
-import { CodeDemo } from '@/_components/features/code/CodeDemo';
-import { FeatureGrid } from '@/_components/features/grid/FeatureGrid';
-import { Stats } from '@/_components/features/stats/Stats';
-import { Footer } from '@/_components/footer/Footer';
-import { Hero } from '@/_components/hero/Hero';
-import { Logos } from '@/_components/logos/Logos';
-import { Pricing } from '@/_components/pricing/Pricing';
+import { CTA } from '@/components/cta/CTA';
+import { Customers } from '@/components/customers/Customers';
+import Carousel from '@/components/features/carousel/Carousel';
+import { CodeDemo } from '@/components/features/code/CodeDemo';
+import { FeatureGrid } from '@/components/features/grid/FeatureGrid';
+import { Stats } from '@/components/features/stats/Stats';
+import { Footer } from '@/components/footer/Footer';
+import { Hero } from '@/components/hero/Hero';
+import { Logos } from '@/components/logos/Logos';
+import { Pricing } from '@/components/pricing/Pricing';
 import { Barlow } from 'next/font/google';
-import { auth } from '@clerk/nextjs/server';
+// import { auth } from '@clerk/nextjs/server';
 
 const barlowFont = Barlow({
   subsets: ['latin'],
   style: ['italic', 'normal'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
-const { userId, redirectToSignIn } = await auth();
-console.log('hello', userId, redirectToSignIn);
+// const { userId, redirectToSignIn } = await auth();
+// console.log('hello', userId, redirectToSignIn);
 
 export default function Home() {
-  if (!userId) return redirectToSignIn();
+  // if (!userId) return redirectToSignIn();
 
   return (
     <main className={barlowFont.className}>

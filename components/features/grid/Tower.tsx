@@ -1,9 +1,9 @@
-"use client"
+'use client';
 
-import { SiGithub } from "react-icons/si";
-import { CalloutChip } from "../../utils/CalloutChip";
-import { Card } from "../../utils/Card";
-import { motion } from "framer-motion";
+import { SiGithub } from 'react-icons/si';
+import { CalloutChip } from '../../utils/CalloutChip';
+import { Card } from '../../utils/Card';
+import { motion } from 'framer-motion';
 import {
   FiAward,
   FiBell,
@@ -11,10 +11,10 @@ import {
   FiMail,
   FiSettings,
   FiUser,
-} from "react-icons/fi";
-import { useEffect, useState } from "react";
-import { CornerBlur } from "@/_components/utils/CornerBlur";
-import { PulseLine } from "@/_components/utils/PulseLine";
+} from 'react-icons/fi';
+import { useEffect, useState } from 'react';
+import { CornerBlur } from '@/components/utils/CornerBlur';
+import { PulseLine } from '@/components/utils/PulseLine';
 
 export const Tower = () => {
   return (
@@ -88,46 +88,46 @@ const MockupTopBar = () => (
 const MockupMain = () => {
   const [users, setUsers] = useState([
     {
-      name: "John Johnson",
-      src: "https://api.dicebear.com/7.x/avataaars/svg?seed=John",
+      name: 'John Johnson',
+      src: 'https://api.dicebear.com/7.x/avataaars/svg?seed=John',
     },
     {
-      name: "Dan Daniels",
-      src: "https://api.dicebear.com/7.x/avataaars/svg?seed=Dan",
+      name: 'Dan Daniels',
+      src: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Dan',
     },
     {
-      name: "Tom Thomas",
-      src: "https://api.dicebear.com/7.x/avataaars/svg?seed=Tom",
+      name: 'Tom Thomas',
+      src: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Tom',
     },
     {
-      name: "Andrea Andreas",
-      src: "https://api.dicebear.com/7.x/avataaars/svg?seed=Andrea",
+      name: 'Andrea Andreas',
+      src: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Andrea',
     },
     {
-      name: "Pete Peters",
-      src: "https://api.dicebear.com/7.x/avataaars/svg?seed=Pete",
+      name: 'Pete Peters',
+      src: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Pete',
     },
     {
-      name: "Phil Phillips",
-      src: "https://api.dicebear.com/7.x/avataaars/svg?seed=Phil",
+      name: 'Phil Phillips',
+      src: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Phil',
     },
     {
-      name: "Garry Garrison",
-      src: "https://api.dicebear.com/7.x/avataaars/svg?seed=Garry",
+      name: 'Garry Garrison',
+      src: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Garry',
     },
     {
-      name: "Frank Franklin",
-      src: "https://api.dicebear.com/7.x/avataaars/svg?seed=Frank",
+      name: 'Frank Franklin',
+      src: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Frank',
     },
     {
-      name: "Don Donaldson",
-      src: "https://api.dicebear.com/7.x/avataaars/svg?seed=Don",
+      name: 'Don Donaldson',
+      src: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Don',
     },
   ]);
 
   useEffect(() => {
     const intervalRef = setInterval(() => {
-      setUsers((pv) => {
+      setUsers(pv => {
         const copy = [...pv];
         const lastEl = copy.shift();
 
@@ -154,7 +154,7 @@ const MockupMain = () => {
             key={u.name}
             transition={{
               duration: 0.5,
-              ease: "easeInOut",
+              ease: 'easeInOut',
             }}
             style={{
               zIndex: i === users.length - 1 ? 0 : 1,
@@ -167,13 +167,13 @@ const MockupMain = () => {
               }}
               transition={{
                 duration: 0.5,
-                ease: "easeInOut",
+                ease: 'easeInOut',
               }}
               src={u.src}
               alt={`Placeholder image for faux user ${u.name}`}
               className="size-5 rounded-full"
             />
-            <span className={i === 0 ? "text-zinc-200" : "text-zinc-500"}>
+            <span className={i === 0 ? 'text-zinc-200' : 'text-zinc-500'}>
               {u.name}
             </span>
           </motion.div>
